@@ -1,0 +1,49 @@
+.header{
+    img {
+        background-color: pink;
+        margin: auto;
+    }
+        nav { 
+        .a-color{
+        color: rosybrown;
+        text-decoration: none;
+
+            &a:hover{
+            color: rosybrown;
+            text-align: center;
+                }
+            }
+        }
+    div {
+        @keyframes animacion-h3 {
+            0% {font-size: 15px; }
+            25% {font-size: 17px;}
+            }
+            &.anima-h3 {
+                height: 20px;
+                margin-bottom: 20px;
+            
+            h3 .animacion {
+                    animation-name: animacion-h3;
+                    animation-iteration-count: infinite;
+                    animation-delay: 3s;
+                    animation-duration: 5s;
+                    
+            }
+        }
+    }
+    div {
+        &.espaciado {
+            margin: $espaciado-top;
+            margin: $espaciado-bottom;
+        }
+        }
+        
+    
+        .mapget {
+            background-color:map-get($estilos1, colores);
+            color:map-get($estilos1, color);
+            text-align: map-get($estilos1, centro);
+            padding: map-get($estilos1, 2rem);
+        }
+    }

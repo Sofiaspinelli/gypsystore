@@ -1,0 +1,159 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: white; }
+
+h1 {
+  text-align: center;
+  color: white;
+  background-color: rosybrown;
+  margin-top: 0%;
+  font-size: 18px; }
+
+h2 {
+  text-align: center;
+  color: black;
+  font-size: 15px; }
+
+h3 {
+  background-color: rosybrown;
+  margin-bottom: 0%;
+  padding: 20px;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  justify-content: center; }
+
+.header img {
+  background-color: pink;
+  margin: auto; }
+
+.header nav .a-color {
+  color: rosybrown;
+  text-decoration: none; }
+  .header nav .a-colora:hover {
+    color: rosybrown;
+    text-align: center; }
+
+@keyframes animacion-h3 {
+  0% {
+    font-size: 15px; }
+  25% {
+    font-size: 17px; } }
+
+.header div.anima-h3 {
+  height: 20px;
+  margin-bottom: 20px; }
+  .header div.anima-h3 h3 .animacion {
+    animation-name: animacion-h3;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-duration: 5s; }
+
+.header div.espaciado {
+  margin: margin 3rem;
+  margin: margin 0.05rem; }
+
+.header .mapget {
+  background-color: #975963;
+  color: black;
+  text-align: center;
+  padding: 2rem; }
+
+.link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+  margin: margin 3rem; }
+
+.nosotros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "img1 text img2"; }
+
+.img1 {
+  grid-area: img1;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 100px; }
+
+.text {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  grid-area: text;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 30px; }
+
+.img2 {
+  grid-area: img2;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 200px; }
+
+.title-contact {
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  padding-top: 30px; }
+
+.center {
+  margin-top: 30px;
+  text-align: center; }
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, fr);
+  grid-template-areas: "datos redes"; }
+
+.datos {
+  grid-area: datos; }
+
+.redes {
+  grid-area: redes; }
+
+.link {
+  text-decoration: none;
+  color: black; }
+
+.link:hover {
+  color: black; }
+
+.color-form {
+  color: black; }
+
+.btn-color {
+  background-color: rosybrown; }
+
+.btn:hover {
+  background-color: rosybrown; }
+
+.btn-text {
+  color: white; }
+
+footer {
+  margin-top: 30px;
+  text-align: center; }
+  footer .footerp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "envios compra pagos";
+    padding-top: 10px;
+    background-color: rosybrown; }
+
+.envios {
+  grid-area: envios; }
+
+.compra {
+  grid-area: compra; }
+
+.pagos {
+  grid-area: pagos; }
