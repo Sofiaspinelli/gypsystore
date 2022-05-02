@@ -1,11 +1,12 @@
 $color:black; 
-$espaciado-bottom: margin .05rem;
+$espaciado-bottom: margin 2rem;
 $espaciado-top: margin 3rem;
 
 $estilos1: 
-        ( colores: rgb(151, 89, 99), 
-        color: black, 
+        ( colores: white, 
+        color: rgb(209, 140, 140) , 
         centro: center, 
         fuente: 20px, 
-        2rem: 2rem,
+        1rem: 1rem,
+        espaciado: 0px,
         );

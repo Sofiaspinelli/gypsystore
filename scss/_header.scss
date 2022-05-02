@@ -16,12 +16,12 @@
         }
     div {
         @keyframes animacion-h3 {
-            0% {font-size: 15px; }
-            25% {font-size: 17px;}
+            0% {font-size: 14px; }
+            25% {font-size: 16px;}
             }
             &.anima-h3 {
                 height: 20px;
-                margin-bottom: 20px;
+                margin-bottom: 40px;
             
             h3 .animacion {
                     animation-name: animacion-h3;
@@ -35,7 +35,7 @@
     div {
         &.espaciado {
             margin: $espaciado-top;
-            margin: $espaciado-bottom;
+            margin-bottom: 0%;
         }
         }
         
@@ -44,6 +44,17 @@
             background-color:map-get($estilos1, colores);
             color:map-get($estilos1, color);
             text-align: map-get($estilos1, centro);
-            padding: map-get($estilos1, 2rem);
+            padding: map-get($estilos1, 1rem);
+            margin: map-get($estilos1, espaciado);
+            
+            
+            
         }
+    }
+
+    @media screen and (max-width: 576px) {
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+        
     }

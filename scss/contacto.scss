@@ -32,3 +32,24 @@ padding-top: 30px;
 .link:hover {
     color: black;
 }
+@media screen and (max-width: 576px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: rosybrown;
+        grid-template-areas: 
+        "datos "
+        "redes";
+        
+    }
+    .datos {
+        grid-area: datos;
+    }
+    .redes {
+        grid-area: redes;
+    }
+    
+}

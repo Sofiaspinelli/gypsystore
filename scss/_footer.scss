@@ -21,3 +21,28 @@ footer{
 .pagos {
     grid-area: pagos;
 }
+@media screen and (max-width: 420px) {
+    footer{
+        margin-top:20px;
+        text-align: center;
+    
+        .footerp {display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "envios compra pagos";
+        padding-top: 10px;
+        background-color: rosybrown;
+        }
+    }
+    
+    .envios {
+        grid-area: envios;
+    }
+    .compra {
+        grid-area: compra;
+    }
+    .pagos {
+        grid-area: pagos;
+    }
+}

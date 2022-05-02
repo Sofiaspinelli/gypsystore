@@ -18,8 +18,9 @@ h2 {
 
 h3 {
   background-color: rosybrown;
+  margin-top: 0px;
   margin-bottom: 0%;
-  padding: 20px;
+  padding: 30px;
   font-size: 15px;
   color: white;
   display: flex;
@@ -38,13 +39,13 @@ h3 {
 
 @keyframes animacion-h3 {
   0% {
-    font-size: 15px; }
+    font-size: 14px; }
   25% {
-    font-size: 17px; } }
+    font-size: 16px; } }
 
 .header div.anima-h3 {
   height: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
   .header div.anima-h3 h3 .animacion {
     animation-name: animacion-h3;
     animation-iteration-count: infinite;
@@ -53,13 +54,18 @@ h3 {
 
 .header div.espaciado {
   margin: margin 3rem;
-  margin: margin 0.05rem; }
+  margin-bottom: 0%; }
 
 .header .mapget {
-  background-color: #975963;
-  color: black;
+  background-color: white;
+  color: #d18c8c;
   text-align: center;
-  padding: 2rem; }
+  padding: 1rem;
+  margin: 0px; }
+
+@media screen and (max-width: 576px) {
+  body {
+    background-color: white; } }
 
 .link {
   text-decoration: none;
@@ -98,6 +104,35 @@ h3 {
   width: 300px;
   height: 200px; }
 
+@media screen and (max-width: 576px) {
+  body {
+    background-color: white; }
+  .nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "text" "img1" "img2";
+    margin: 20px; }
+  .img1 {
+    grid-area: img1;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 100px; }
+  .img2 {
+    grid-area: img2;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 200px; }
+  .text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    grid-area: text;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 30px; } }
+
 .title-contact {
   background-color: white;
   color: black;
@@ -125,6 +160,19 @@ h3 {
 
 .link:hover {
   color: black; }
+
+@media screen and (max-width: 576px) {
+  body {
+    background-color: white; }
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rosybrown;
+    grid-template-areas: "datos " "redes"; }
+  .datos {
+    grid-area: datos; }
+  .redes {
+    grid-area: redes; } }
 
 .color-form {
   color: black; }
@@ -157,3 +205,21 @@ footer {
 
 .pagos {
   grid-area: pagos; }
+
+@media screen and (max-width: 420px) {
+  footer {
+    margin-top: 20px;
+    text-align: center; }
+    footer .footerp {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas: "envios compra pagos";
+      padding-top: 10px;
+      background-color: rosybrown; }
+  .envios {
+    grid-area: envios; }
+  .compra {
+    grid-area: compra; }
+  .pagos {
+    grid-area: pagos; } }

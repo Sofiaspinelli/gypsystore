@@ -30,3 +30,44 @@ height: 100px;
     height: 200px;
     }
     
+    @media screen and (max-width: 576px) {
+        body {
+            background-color: white;
+        }
+        .nosotros {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "text"
+            "img1"
+            "img2";
+            margin: 20px;
+
+        }
+        
+        .img1 {
+            grid-area: img1;
+            display: flex;
+            justify-content:center;
+            width: 500px;
+            height: 100px;
+            }
+            .img2 {
+                grid-area: img2;
+                display: flex;
+                justify-content: center;
+                width: 300px;
+                height: 200px;
+                }
+                .text {
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    grid-area: text;
+                    display: flex;
+                    justify-content: center;
+                    color: black;
+                    font-size: 30px;
+                    
+                }        
+    
+    }
