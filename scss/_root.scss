@@ -7,15 +7,16 @@
 h1 {
     text-align: center;
     color: white;
-    background-color: rosybrown;
-    margin-top: 0%;
-    font-size: 18px;
+    background-image: linear-gradient(to right, white,  rosybrown,  rosybrown,  rosybrown, white);
+    padding: 10px;
+    font-size: 20px;
+    
 } 
 
 h2 {
     text-align: center;
     color: black;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 h3 {
@@ -23,7 +24,7 @@ h3 {
     margin-top: 0px;
     margin-bottom: 0%;
     padding: 30px;
-    font-size: 15px;
+    font-size: 20px;
     color:white;
     display: flex;
     justify-content: center;
