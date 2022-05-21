@@ -20,7 +20,7 @@ h3 {
   background-color: rosybrown;
   margin-top: 0px;
   margin-bottom: 0%;
-  padding: 30px;
+  padding: 40px;
   font-size: 20px;
   color: white;
   display: flex;
@@ -51,9 +51,9 @@ img {
 
 @keyframes animacion-h3 {
   0% {
-    font-size: 14px; }
-  25% {
-    font-size: 14.5px; } }
+    font-size: 25px; }
+  20% {
+    font-size: 15px; } }
 
 div.anima-h3 {
   height: 20px;
@@ -75,9 +75,25 @@ div.espaciado {
   padding: 1rem;
   margin: 0px; }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 500px) {
   body {
-    background-color: white; } }
+    background-color: white; }
+  @keyframes animacion-h3 {
+    0% {
+      font-size: 20px; }
+    20% {
+      font-size: 15px; } }
+  div.anima-h3 {
+    height: 20px;
+    margin-bottom: 40px; }
+    div.anima-h3 h3 .animacion {
+      animation-name: animacion-h3;
+      animation-iteration-count: infinite;
+      animation-delay: 3s;
+      animation-duration: 5s; }
+  div.espaciado {
+    margin: margin 3rem;
+    margin-bottom: 0%; } }
 
 .link {
   text-decoration: none;

@@ -12,11 +12,11 @@
             text-decoration: none;
         }
 
-       
+
     div {
         @keyframes animacion-h3 {
-            0% {font-size: 14px; }
-            25% {font-size: 14.5px;}
+            0% {font-size: 25px; }
+            20% {font-size: 15px;}
             }
             &.anima-h3 {
                 height: 20px;
@@ -51,9 +51,33 @@
         }
     
 
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 500px) {
         body {
             background-color: rgb(255, 255, 255);
         }
-        
+        div {
+            @keyframes animacion-h3 {
+                0% {font-size:20px; }
+                20% {font-size: 15px;}
+                }
+                &.anima-h3 {
+                    height: 20px;
+                    margin-bottom: 40px;
+                
+                h3 .animacion {
+                        animation-name: animacion-h3;
+                        animation-iteration-count: infinite;
+                        animation-delay: 3s;
+                        animation-duration: 5s;
+                        
+                }
+            }
+        }
+        div {
+            &.espaciado {
+                margin: $espaciado-top;
+                margin-bottom: 0%;
+            }
+            }
+            
     }
