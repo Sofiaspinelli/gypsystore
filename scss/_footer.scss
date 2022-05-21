@@ -23,11 +23,21 @@ footer{
 }
 
 .footer-03 {
- background-color: rosybrown;
+background-color: rosybrown;
 }
-.a-footer {
+
+.a-footer{
     color: white;
+    text-decoration: none;
+    
 }
+.a-footer:hover {
+    color: grey;
+}
+
+
+
+
 @media screen and (max-width: 420px) {
     footer{
         margin-top:20px;

@@ -1,23 +1,22 @@
-.header{
+
     img {
         background-color: pink;
         margin: auto;
     }
-        nav { 
-        .a-color{
-        color: rosybrown;
-        text-decoration: none;
-
-            &a:hover{
-            color: rosybrown;
-            text-align: center;
-                }
-            }
+    
+        .a-link{
+        color: black;
+        text-decoration: none;}
+        .a-link:hover {
+            background-color: lightgray;
+            text-decoration: none;
         }
+
+       
     div {
         @keyframes animacion-h3 {
             0% {font-size: 14px; }
-            25% {font-size: 16px;}
+            25% {font-size: 14.5px;}
             }
             &.anima-h3 {
                 height: 20px;
@@ -50,7 +49,7 @@
             
             
         }
-    }
+    
 
     @media screen and (max-width: 576px) {
         body {

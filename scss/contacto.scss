@@ -1,19 +1,7 @@
-.title-contact {
-background-color: white;
-color: black;
-font-size: 30px;
-padding-top: 30px;
-}
 
 .center{
-    margin-top: 30px;
+    /* margin-top: 30px; */
     text-align: center;
-}
-.contact-info {
-    display: grid;
-    grid-template-columns: repeat(2,fr);
-    grid-template-areas: 
-    "datos redes";
 }
 
 
@@ -24,13 +12,17 @@ padding-top: 30px;
     grid-area: redes;
 }
 
-.link{
+.linkk{
     text-decoration: none;
-    color: black;
+    color: rosybrown;
     
 }
-.link:hover {
-    color: black;
+.linkk:hover {
+    color: lightgray;
+}
+
+.margen-contacto {
+    margin-top: 60px;
 }
 @media screen and (max-width: 576px) {
     body {
